@@ -1,5 +1,6 @@
 # gamejam
-<h1>clear
+<h1>
+clear
 clc
 rsb=0:2:20
 for k=1:length(rsb)
@@ -14,9 +15,13 @@ for k=1:length(rsb)
     end
     for j=1:100
         if x(j)==0
+            xm(j)=-3;
+        elseif x(j)==1 
             xm(j)=-1;
-        else 
+        elseif x(j)==2
             xm(j)=1;
+        else
+            xm(j)=3;
         end
     end
     
